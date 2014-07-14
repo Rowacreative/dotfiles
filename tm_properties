@@ -17,6 +17,8 @@ excludeInFolderSearch = "{$excludeInFolderSearch,$myExcludes}"
 #
 softWrap         = false
 showInvisibles   = true
+softTabs         = true
+tabSize          = 2
 
 # File type specific configuration
 #

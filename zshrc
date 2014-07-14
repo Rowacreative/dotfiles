@@ -1,5 +1,5 @@
 ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="bira"
+ZSH_THEME="robbyrussell"
 CASE_SENSITIVE="true"
 DISABLE_AUTO_UPDATE="true"
 # DISABLE_CORRECTION="true"
@@ -33,7 +33,6 @@ alias rapp='rails new --skip-gemfile --skip-test-unit --database=mysql -m https:
 alias opendev='open http://$(basename $PWD).dev'
 
 # s3cmd aliases for different s3 accounts
-alias s3koen='s3cmd -c ~/.s3cfg'
 alias s3fetch='s3cmd -c ~/.s3cfg-fetch'
 
 setopt complete_aliases
@@ -54,28 +53,14 @@ fi
 #export PATH=/usr/local/git/bin:$PATH
 
 # HUB
-export GITHUB_USER="koenpunt"
-eval "$(hub alias -s)"
-
-# PHP
-#export PATH=/usr/local/php5/bin:$PATH
-
-# Override pg_config from php
-#export PATH=/usr/local/bin:$PATH
+# export GITHUB_USER=""
+# eval "$(hub alias -s)"
 
 # Heroku Toolbelt
 export PATH=/usr/local/heroku/bin:$PATH
 
-# AWS credentials
-export EC2_HOME=$HOME/.aws
-export EC2_PRIVATE_KEY=$(echo $HOME/.aws/pk-*.pem)
-export EC2_CERT=$(echo $HOME/.aws/cert-*.pem)
-export AWS_CREDENTIAL_FILE=$HOME/.aws/aws-credential-file.txt
-export PATH="$EC2_HOME/bin:$PATH"
-export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home/
-
 # NVM
-export NVM_DIR="/Users/koenpunt/.nvm"
+export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads NVM
 
 # Grunt
